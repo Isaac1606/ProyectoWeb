@@ -3,5 +3,4 @@
 }
 .dropdown:hover>.dropdown-menu{
     display: block; /*para que no tengas que hacer click, solo con mouse*/
-    background-color: #0c5460; /*para que tenga el mimso color que la barra de navegacion*/
 }
