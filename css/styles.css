@@ -3,4 +3,11 @@
 }
 .dropdown:hover>.dropdown-menu{
     display: block; /*para que no tengas que hacer click, solo con mouse*/
+    color: #9fcdff;
+}
+.dropdown:hover>.dropdown-menu>:hover{
+    background-color: #80bdff;
+}
+body{
+    padding-top: 5.3rem;
 }
