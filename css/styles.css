@@ -1,3 +1,7 @@
-.site-header{
-    background-color: #0c5460;
+.site-header {
+    background-color: #0c5460; /*color de la barra de navegacion*/
+}
+.dropdown:hover>.dropdown-menu{
+    display: block; /*para que no tengas que hacer click, solo con mouse*/
+    background-color: #0c5460; /*para que tenga el mimso color que la barra de navegacion*/
 }
