@@ -1,1 +1,0 @@
-La descripción del proyecto va aquí... o cualquier mamada :v
