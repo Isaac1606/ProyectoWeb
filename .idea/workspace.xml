@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69486a37-2e02-4eec-94b8-4c352f626768" name="Default Changelist" comment="Mio">
-      <change afterPath="$PROJECT_DIR$/estilo.css" afterDir="false" />
+    <list default="true" id="69486a37-2e02-4eec-94b8-4c352f626768" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -20,7 +19,16 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="904e9000-1b91-4dff-a158-7eb6c05a746e" />
   </component>
   <component name="ProjectId" id="1TLZYEka9q2smbQhwu5nNvXawMq" />
   <component name="PropertiesComponent">
@@ -59,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573241381786</updated>
-      <workItem from="1573241383088" duration="13299000" />
+      <workItem from="1573241383088" duration="13612000" />
     </task>
     <task id="LOCAL-00001" summary="Mio">
       <created>1573241457696</created>
@@ -68,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573241457696</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Mio">
+      <created>1573258326583</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573258326583</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
