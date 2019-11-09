@@ -51,3 +51,7 @@ ul>li>a:hover{
     color: white;
     text-decoration: none;
 }
+
+.bg-dark2{
+    background-color: #293039;
+}
