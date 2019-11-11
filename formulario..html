@@ -56,30 +56,75 @@
         <h1>Formulario</h1>
     </div>
     <div class="row justify-content-center align-items-center h-100">
-        <div class="col-12  col-sm-9 col-md-7 col-lg-6 col-xl-5">
-
+        <div class="col-12  col-sm-9 col-md-7 col-lg-7 col-xl-6">
+            <!-- In case you require server side, you can indicate invalid and valid form fields with .is-invalid and .is-valid. Note that .invalid-feedback is also supported with these classes.-->
             <form action="">
-                <div class="form-group row">
-                    <div class="col-12 col-md-12">
+
+                <div class="form-row align-items-center">
+                    <div class="col-xl-4">
                         <label for="nombre">Nombre</label>
-                        <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
+                        <input type="text" class="form-control mb-2" id="nombre" name="nombre" placeholder="Nombre">
+                        <div class="valid-feedback">
+                            <!--Mensaje que se mostrara si es valido el nombre con la clase is-valid en el placeholder-->
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-xl-4">
+                        <label for="apellidoP">Apellido Paterno</label>
+                        <input type="text" class="form-control mb-2" id="apellidoP" name="apellidoP" placeholder="Apellido Paterno">
+                        <div class="valid-feedback">
+                            <!--Mensaje que se mostrara si es valido el nombre con la clase is-valid en el placeholder-->
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <label for="apellidoM">Apellido Materno</label>
+                        <input type="text" class="form-control mb-2" id="apellidoM" name="apellidoM" placeholder="Apellido Materno">
+                        <div class="valid-feedback">
+                            <!--Mensaje que se mostrara si es valido el nombre con la clase is-valid en el placeholder-->
+                            Looks good!
+                        </div>
                     </div>
                 </div>
+
+
+                <div class="form-group row">
+                    <div class="col">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                               placeholder="name@example.com">
+                    </div>
+                </div>
+
+
+                <div class="form-row align-items-center">
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-2">
+                        <label class="sr-only" for="inlineFormInputGroup2">Username</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup2" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-sm-3 mb-sm-3 mt-3 mb-3">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                            <label class="custom-file-label" for="validatedCustomFile">Elige tu foto de
+                                perfil...</label>
+                            <div class="invalid-feedback">Example invalid custom file feedback</div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="form-group row">
                     <div class="col-12 col-md-12">
                         <label for="pass">Contraseña</label>
                         <input type="text" class="form-control" placeholder="Contraseña" name="pass" id="pass">
                     </div>
                 </div>
-                <div class="form-group row">
-                    <div class="col-12 col-md-12">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea class="form-control" name="mensaje" id="mensaje"></textarea>
-                        <p id="" class="form-text text-muted text-right"> <!--Texto para dar indicaciones se puede trabajar en conjunto a javascript-->
-                            Maximo 140 caracteres
-                        </p>
-                    </div>
-                </div>
+
 
                 <div class="form-group row">
                     <div class="col-12 col-md-12">
@@ -109,19 +154,34 @@
                     </div><!-- -->
                 </div><!-- -->
 
+                <div class="form-group row">
+                    <div class="col-12 col-md-12">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" name="mensaje" id="mensaje"></textarea>
+                        <p id="" class="form-text text-muted text-right">
+                            <!--Texto para dar indicaciones se puede trabajar en conjunto a javascript-->
+                            Maximo 140 caracteres
+                        </p>
+                    </div>
+                </div>
+
+
+
                 <div class="form-group row ">
                     <div class="col text-center text-md-right">
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="" id="checkboxPersonalizado1" class="custom-control-input">
-                            <label for="checkboxPersonalizado1" class="custom-control-label">Acepto los Terminos y condiciones</label>
-                        </div>
-
-                        <div class="custom-control custom-checkbox">
                             <input type="checkbox" name="" id="checkboxPersonalizado2" class="custom-control-input">
-                            <label for="checkboxPersonalizado2" class="custom-control-label mr-2 mt-1">Acepto las Politicas de Privacidad </label>
+                            <label for="checkboxPersonalizado2" class="custom-control-label mr-2 mt-1">Acepto las
+                                Politicas de Privacidad </label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="" id="checkboxPersonalizado1" class="custom-control-input">
+                            <label for="checkboxPersonalizado1" class="custom-control-label">Acepto los Terminos y
+                                condiciones</label>
                         </div>
                     </div>
                 </div>
+
 
                 <!--                <div class="input-group">-->
                 <!--                    <input type="text" name="" id="buscar" class="form-control" placeholder="Buscar">-->
@@ -131,7 +191,7 @@
                 <!--                </div>-->
                 <div class="row">
                     <div class="col text-center text-md-right">
-                        <button class="btn btn-primary mt-3" type="submit">Enviar</button>
+                        <button class="btn btn-primary mt-3 mb-3" type="submit">Enviar</button>
                     </div>
                 </div>
             </form>
@@ -139,6 +199,7 @@
     </div>
 </main>
 
+<!--
 <div class="container">
     <div class="row">
         <div class="col">
@@ -147,12 +208,14 @@
                 <hr>
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" name="" id="checkboxPersonalizado3" class="custom-control-input">
-                    <label for="checkboxPersonalizado3" class="custom-control-label">Acepto los Terminos y condiciones</label>
+                    <label for="checkboxPersonalizado3" class="custom-control-label">Acepto los Terminos y
+                        condiciones</label>
                 </div>
 
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" name="" id="checkboxPersonalizado4" class="custom-control-input">
-                    <label for="checkboxPersonalizado4" class="custom-control-label">Acepto las Politicas de Privacidad</label>
+                    <label for="checkboxPersonalizado4" class="custom-control-label">Acepto las Politicas de
+                        Privacidad</label>
                 </div>
             </form>
         </div>
@@ -185,16 +248,15 @@
                     <label for="radioPersonalizado4" class="custom-control-label">Mayor de Edad</label>
                 </div>
 
-
-
             </form>
         </div>
     </div>
 </div>
-
+-->
 
 <script src="Bootstrap/js/jquery-3.4.1.min.js"></script>
 <script src="Bootstrap/js/popper.min.js"></script>
 <script src="Bootstrap/js/bootstrap.min.js"></script>
+<script src="js/js.js"></script>
 </body>
 </html>
