@@ -59,3 +59,11 @@ ul>li>a:hover{
     background-color: #21262E;
 }
 
+.btn-primary {
+    background-color: #4b6c96;
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(to left, #80bdff, #4b6c96);
+}
+
