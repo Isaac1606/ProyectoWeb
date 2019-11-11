@@ -15,7 +15,8 @@
             <a href="index.html" class="ml-xl-4">
                 <img src="img/logo.svg" alt="Logotipo">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de navegacion">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Menu de navegacion">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -25,7 +26,8 @@
                         <a href="#" class="nav-link">Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                        <a href="#" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Blog</a>
                         <div class="dropdown-menu bg-dark" aria-labelledby="menu-categorias">
                             <a href="#" class="dropdown-item text-secondary">HTML</a>
                             <a href="#" class="dropdown-item text-secondary">CSS</a>
@@ -48,16 +50,92 @@
 
 </header>
 
-<main class="container mt-2">
-    <div class="row">
 
-        <div class="col">
-            <h1>Hola Mundo</h1>
-
-        </div>
-
+<main class="container-fluid h-100 text-dark mt-2">
+    <div class="row justify-content-center align-items-center">
+        <h1>Formulario</h1>
     </div>
-</main >
+    <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12  col-sm-9 col-md-7 col-lg-6 col-xl-5">
+
+            <form action="">
+                <div class="form-group row">
+                    <div class="col-12 col-md-12">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-12 col-md-12">
+                        <label for="pass">Contraseña</label>
+                        <input type="text" class="form-control" placeholder="Contraseña" name="pass" id="pass">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-12 col-md-12">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" name="mensaje" id="mensaje"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-12 col-md-12">
+                        <label for="pais">País</label>
+                        <select name="pais" id="pais" class="form-control">
+                            <option value="mexico">México</option>
+                            <option value="mexico">España</option>
+                            <option value="mexico">Colombia</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row"> <!-- -->
+                    <div class="col-6"><!-- -->
+                        <label for="sexo">Sexo</label><!-- -->
+                        <div class="form-check" id="sexo">
+                            <label class="form-check-label">
+                                <input type="radio" name="sexo" id="hombre" class="form-check-input">Hombre
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="radio" name="sexo" id="mujer" class="form-check-input">Mujer
+                            </label>
+                        </div>
+                    </div><!-- -->
+                </div><!-- -->
+
+                <div class="form-group row ">
+                    <div class="col text-center text-md-right">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="terminos" id="terminos" class="form-check-input">Acepto
+                                Terminos y
+                                Condiciones
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--                <div class="input-group">-->
+                <!--                    <input type="text" name="" id="buscar" class="form-control" placeholder="Buscar">-->
+                <!--                    <div class="input-group-append">-->
+                <!--                        <button class="btn btn-primary">Buscar</button>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <div class="row">
+                    <div class="col text-center text-md-right">
+                        <button class="btn btn-primary mt-3" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+
+
 <script src="Bootstrap/js/jquery-3.4.1.min.js"></script>
 <script src="Bootstrap/js/popper.min.js"></script>
 <script src="Bootstrap/js/bootstrap.min.js"></script>
