@@ -3,10 +3,10 @@ session_start();
 
 if(isset($_SESSION["usuario"]) and $_SESSION['tipo'] == "admin"){
     $imagen = $_GET['imagen'];
-    //echo $imagen;
     $conexion = mysqli_connect("localhost","root","","proyecto") or die ("Error al conectar con la base de datos");
     $sql = "delete from imagen where id_imagen = $imagen";
-    //echo $sql;
+    $res = mysqli_query($conexion, $sql);
+    $sql = "delete from categoria where id_imagen = $imagen";
     $res = mysqli_query($conexion, $sql);
     mysqli_close($conexion);
     header('Location: elimina_imagen.php');        
