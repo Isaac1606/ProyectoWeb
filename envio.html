@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Envio</title>
 </head>
@@ -15,8 +16,7 @@
             <a href="index.html" class="ml-xl-4">
                 <img src="img/logo.svg" alt="Logotipo">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
-                    aria-controls="navbar" aria-expanded="false" aria-label="Menu de navegacion">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de navegacion">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -41,25 +41,75 @@
                         <a href="#" class="nav-link">Contacto</a>
                     </li>
                 </ul>
-                <a href="login.html" class="btn text-white mr-2">Iniciar sesión</a>
+                <button type="button" class="btn text-white mr-2" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Iniciar sesion</button>
                 <a href="formulario.html" class="btn btn-outline-light text-uppercase">Crear una cuenta</a>
             </div>
         </div>
     </nav>
 
-
 </header>
 
-<main class="container">
-    <div class="row">
+<main class="container-fluid h-100 text-dark mt-4">
+    <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12  col-sm-9 col-md-7 col-lg-7 col-xl-6">
+            <!-- In case you require server side, you can indicate invalid and valid form fields with .is-invalid and .is-valid. Note that .invalid-feedback is also supported with these classes.-->
+            <form action="">
 
-        <div class="col">
-            <h1>Hola Mundo</h1>
+                    <div class="form-group row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <label for="mensaje" class="text-uppercase">Añadir un Mensaje</label>
+                            <textarea class="form-control" name="mensaje" id="mensaje"></textarea>
+                        </div>
+                    </div>
 
+
+
+                <div class="form-group row">
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="text-uppercase">Email del destinatario</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                               placeholder="name@example.com">
+                    </div>
+                </div>
+
+
+
+                <!--                <div class="form-group row">-->
+                <!--                    <div class="col-12 col-md-12">-->
+                <!--                        <label for="pais">País</label>-->
+                <!--                        <select name="pais" id="pais" class="form-control">-->
+                <!--                            <option value="mexico">México</option>-->
+                <!--                            <option value="españa">España</option>-->
+                <!--                            <option value="colombia">Colombia</option>-->
+                <!--                        </select>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+
+                <div class="form-group row">
+                    <div class="col">
+                        <label for="date" class="text-uppercase">Fecha de Envio de Tarjeta</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                </div>
+
+
+
+                <!--                <div class="input-group">-->
+                <!--                    <input type="text" name="" id="buscar" class="form-control" placeholder="Buscar">-->
+                <!--                    <div class="input-group-append">-->
+                <!--                        <button class="btn btn-primary">Buscar</button>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <div class="row">
+                    <div class="col text-center text-md-right">
+                        <button class="btn btn-primary mt-3 mb-3" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
         </div>
-
     </div>
 </main>
+
 <footer class="bg-dark2 text-white mt-5 pt-5">
 
     <!-- Footer Links -->
@@ -208,9 +258,45 @@
 
 
 </footer>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label class="sr-only" for="inlineFormInputGroup2">Username</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup2" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Contraseña</label>
+                        <input type="text" class="form-control" placeholder="Contraseña" name="pass" id="pass">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Ingresar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script src="Bootstrap/js/jquery-3.4.1.min.js"></script>
 <script src="Bootstrap/js/popper.min.js"></script>
 <script src="Bootstrap/js/bootstrap.min.js"></script>
-<script src="js/js.js"></script>
 </body>
 </html>
