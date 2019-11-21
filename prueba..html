@@ -8,145 +8,143 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="row">
-
-        <div class="col">
-            <h1>Hola Mundo</h1>
-
+<main class="container">
+    <div class="row mt-3">
+        <div class="col-6">
+            <div class="card">
+                <img src="img/fondo.jpg" alt="" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h3 class="card-title">Tituo</h3>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae optio veniam.
+                    </p>
+                    <a href="" class="btn btn-primary btn-lg btn-block">Boton</a>
+                </div>
+            </div>
         </div>
 
+        <div class="col-6">
+            <div class="card">
+                <img src="img/fondo.jpg" alt="" class="card-img-top img-fluid">
+                <div class="card-body">
+                    <h3 class="card-title">Tituo</h3>
+                    <p class="card-subtitle text-muted mb-2">Subtitulo</p>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae optio veniam.
+                    </p>
+                    <a href="#" class="card-link">Enlace #1</a>
+                    <a href="#" class="card-link">Enlace #2</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-3">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    Encabezado de la Card
+                </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Lorem ipsum dolor.</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Ir al post</a>
+                    </div>
+                <div class="card-footer">
+                    Footer de la Card
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row my-3">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Lorem ipsum dolor.</h3>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <a href="#" class="btn btn-primary">Ir a Post</a>
+                    <a href="#" class="btn btn-light">Ir al Post</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col">
+            <div class="card bg-success">
+                <div class="card-body">
+                    <h3 class="card-title">Lorem ipsum dolor.</h3>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <a href="#" class="btn btn-primary">Ir a Post</a>
+                    <a href="#" class="btn btn-light">Ir al Post</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row my-3">
+        <div class="col">
+            <div class="card border-success">
+                <div class="card-body">
+                    <h3 class="card-title">Lorem ipsum dolor.</h3>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                    <a href="#" class="btn btn-primary">Ir a Post</a>
+                    <a href="#" class="btn btn-light">Ir al Post</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</main>
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label class="sr-only" for="inlineFormInputGroup2">Username</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup2" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Contraseña</label>
+                        <input type="text" class="form-control" placeholder="Contraseña" name="pass" id="pass">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+        </div>
     </div>
 </div>
-
-<footer class="page-footer font-small bg-dark text-white  mt-5 pt-5">
-
-    <!-- Footer Links -->
-    <div class="container pr-5 pl-5">
-
-        <!-- Grid row -->
-        <div class="row justify-content-around">
-
-            <!-- Grid column -->
-            <div class="col mb-md-0 mb-3">
-
-                <!-- Links -->
-                <h5 class="text-uppercase">Explorar</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Tipos de diseño</a>
-                    </li>
-                    <li>
-                        <a href="#">Plantillas</a>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col mb-md-0 mb-3">
-
-                <!-- Links -->
-                <h5 class="text-uppercase">Funciones</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Imprimir</a>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col mb-md-0 mb-3">
-
-                <!-- Links -->
-                <h5 class="text-uppercase">Aprende</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col mb-md-0 mb-3">
-
-                <!-- Links -->
-                <h5 class="text-uppercase">Recursos</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Editor de fotos</a>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col mb-md-0 mb-3 ">
-
-                <!-- Links -->
-                <h5 class="text-uppercase">Nosotros</h5>
-
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Conocenos</a>
-                    </li>
-                    <li>
-                        <a href="#">Términos y política de privacidad</a>
-                    </li>
-                </ul>
-
-            </div>
-            <!-- Grid column -->
-
-        </div>
-        <!-- Grid row -->
-    </div>
-    <!-- Footer Links -->
-
-    <ul class="list-unstyled list-inline text-center">
-        <li class="list-inline-item">
-            <a class="btn-floating btn-tw mx-1">
-                <button type="button" class="btn btn-outline-primary"><i class='fab fa-facebook'></i> Facebook</button>
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a class="btn-floating btn-tw mx-1">
-                <button type="button" class="btn btn-outline-info"><i class='fab fa-twitter'></i> Twitter </button>
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a class="btn-floating btn-gplus mx-1">
-                <button type="button" class="btn btn-outline-light"><i class="fab fa-google-plus-g"> </i> Google </button>
-
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a class="btn-floating btn-li mx-1">
-                <button type="button" class="btn btn-outline-success"><i class='fab fa-whatsapp'></i> WhatssApp</button>
-            </a>
-        </li>
-    </ul>
-
-
-    <hr class="clearfix w-100 d-md-none pb-3">
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/"> PostMex.com</a>
-    </div>
-    <!-- Copyright -->
-
-</footer>
 
 <script src="Bootstrap/js/jquery-3.4.1.min.js"></script>
 <script src="Bootstrap/js/popper.min.js"></script>
