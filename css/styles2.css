@@ -1,0 +1,19 @@
+.card-img-top {
+    /*position: absolute;*/
+    /*top: -100px;*/
+    left: 50%;
+    align-self: center;
+    width: 160px !important;
+    height: 160px;
+}
+
+.card {
+    margin-top: 30px;
+    padding-top: 30px;
+    border:none;
+}
+
+.ts{
+    font-size: 1.2rem;
+}
+
