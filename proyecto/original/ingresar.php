@@ -3,7 +3,7 @@
     include("configuraBD.php");
     $usuario = $_POST['usuario'];
     $clave = $_POST['clave'];
-    $sql = "select correo,nombre,tipo,imagen from usuario where id_usuario = '$usuario' and clave = '$clave'";
+    $sql = "SELECT correo,nombre,tipo,imagen from usuario where id_usuario = '$usuario' and clave = '$clave'";
     $res = mysqli_query($conexion, $sql);
     if(mysqli_affected_rows($conexion) == 1){
         session_start();
@@ -24,7 +24,7 @@
     } else{
         //mensaje error
         mysqli_close($conexion);
-        header('Location: index.php');       
+        header('Location: index.php');
     }
     mysqli_close($conexion);
 
