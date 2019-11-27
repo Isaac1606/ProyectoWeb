@@ -204,6 +204,12 @@ include("modal.php");
 ?>
 <!--FIN DEL MODAL-->
 
+<!--MODAL CAMBIOS-->
+<?php
+include("modal_cambio.php");
+?>
+<!--FIN-->
+
 <script src="Bootstrap/js/jquery-3.4.1.min.js"></script>
 <script src="Bootstrap/js/popper.min.js"></script>
 <script src="Bootstrap/js/bootstrap.min.js"></script>

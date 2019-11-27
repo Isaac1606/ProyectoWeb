@@ -10,17 +10,17 @@
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <label class="sr-only" for="usuario1">Username</label>
+                        <label class="sr-only" for="usuario">Username</label>
                         <div class="input-group mb-2">
                             <div class="input-group-prepend">
                                 <div class="input-group-text">@</div>
                             </div>
-                            <input type="text" class="form-control" name="" id="usuario1" placeholder="Username">
+                            <input type="text" class="form-control" name="" id="usuario" placeholder="Username">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="pass">Contraseña</label>
-                        <input type="password" class="form-control" placeholder="Contraseña" name="" id="clave1">
+                        <input type="password" class="form-control" placeholder="Contraseña" name="" id="clave">
                     </div>
                 </form>
             </div>
@@ -34,8 +34,8 @@
 
 <script>
 function ingresaDatos(){
-    usuario = $("#usuario1").val();
-    clave = $("#clave1").val();
+    usuario = $("#usuario").val();
+    clave = $("#clave").val();
     cadena = "usuario="+usuario+"&clave="+clave;
     console.log(cadena);
     $.ajax({

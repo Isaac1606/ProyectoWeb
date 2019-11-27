@@ -74,7 +74,7 @@ if($_SESSION['tipo'] == "admin"){
           </div>
         </div>
       </div>
-
+      
 
 <!--TABLA DE DATOS-->
 <div class="row">
@@ -118,8 +118,8 @@ if($_SESSION['tipo'] == "admin"){
                 </div>
             </div>
        </div>
-</div>
-
+</div> 
+      
 
         <td>
           <a href="#myModal<?php echo $aux;?>" role="button" class="btn btn-success" data-toggle="modal">View</a>
@@ -133,7 +133,7 @@ if($_SESSION['tipo'] == "admin"){
       </tr>
       <?php
       $aux = $aux + 1;
-    }//FIN DE WHILE MODAL
+      }
       ?>
     </table>
   </div>
@@ -156,12 +156,20 @@ if($_SESSION['tipo'] == "admin"){
         <input type="text" name="" id="nombreNew" class="form-control input-sm">
         <label>Nueva descripcion</label>
         <input type="text" name="" id="descripcionNew" class="form-control input-sm">
+        </div>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal" id="actualizar" onclick="actualizaImagen()" >Actualizar</button>
       </div>
     </div>
   </div>
 </div>
+
+<!--MODAL CAMBIOS-->
+<?php
+include("modal_cambio.php");
+?>
+<!--FIN-->
 
 <!--CODIGOS-->
 <script src="Bootstrap/js/jquery-3.4.1.min.js"></script>
@@ -177,6 +185,7 @@ if($_SESSION['tipo'] == "admin"){
 
 <?php
 } else{
-    header('Location: index.php');
-}
+  echo '<script>
+    window.location="index.php";
+    </script>';  }
 ?>

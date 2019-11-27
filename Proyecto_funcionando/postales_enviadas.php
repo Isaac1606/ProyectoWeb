@@ -27,7 +27,6 @@ if(isset($_SESSION['tipo'])){
     <div class="table-responsive">
     <table id="tabla" class="table table-haver table-condensed table-bordered">
       <tr>
-        <th scope='col'>ID Usuario    </th>
         <th scope='col'>Correo Destino</th>
         <th scope='col'>Dedicatoria   </th>
         <th scope='col'>Fecha de Envio</th>
@@ -48,7 +47,6 @@ if(isset($_SESSION['tipo'])){
         $row1=mysqli_fetch_row($result1);
         ?>
         <tr>
-        <td><?php echo $row[2] ?></td>
         <td><?php echo $row[3] ?></td>
         <td><?php echo $row[4] ?></td>
         <td><?php echo $row[5] ?></td>
@@ -87,7 +85,11 @@ if(isset($_SESSION['tipo'])){
 </div>
 </div>
 
-
+<!--MODAL CAMBIOS-->
+<?php
+include("modal_cambio.php");
+?>
+<!--FIN-->
 
 <script src="Bootstrap/js/jquery-3.4.1.min.js"></script>
 <script src="Bootstrap/js/popper.min.js"></script>

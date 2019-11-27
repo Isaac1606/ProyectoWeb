@@ -44,6 +44,11 @@ $aux = $aux + 1;
 </div>
 </div>
 
+<!--MODAL-->
+<?php
+include("modal.php");
+?>
+<!--FIN DEL MODAL-->
 
 
 <!--MODAL DE ENVIO-->
@@ -60,10 +65,11 @@ $aux = $aux + 1;
         <!--<img id="archivo" src="images.jpg" class="img-fluid"/><br>-->
         <input type="text" hidden="" id="id_imagen" name="">
         <label>Correo destino</label>
-        <input type="text" name="" id="correo_destino" class="form-control">
+        <input type="email" name="" id="correo_destino" class="form-control">
         <label>Dedicatoria</label>
         <!--<input type="text" name="" id="dedicatoria" class="form-control input-sm">-->
         <textarea id="dedicatoria" name="" class="form-control"></textarea>
+        </div>
 
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal" id="enviar" onclick="mandaPostal()" >Enviar</button>
@@ -72,11 +78,11 @@ $aux = $aux + 1;
   </div>
 </div>
 
-<!--MODAL-->
+<!--MODAL CAMBIOS-->
 <?php
-include("modal.php");
+include("modal_cambio.php");
 ?>
-<!--FIN DEL MODAL-->
+<!--FIN-->
 
 <script src="Bootstrap/js/jquery-3.4.1.min.js"></script>
 <script src="Bootstrap/js/popper.min.js"></script>

@@ -13,19 +13,6 @@
         $_SESSION['nombre'] = $filas[1];
         $_SESSION['imagen'] = $filas[3];
         $_SESSION['tipo'] = $filas[2];
-        mysqli_close($conexion);
-        if($_SESSION['tipo']=='admin'){
-            header('Location: detalles.php');
-        }
-        else{
-            //mensaje bienvenido
-            header('Location: index.php');
-        }
-    } else{
-        //mensaje error
-        mysqli_close($conexion);
-        header('Location: index.php');       
+        echo 1;
     }
-    mysqli_close($conexion);
-
 ?>

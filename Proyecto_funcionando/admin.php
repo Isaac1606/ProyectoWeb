@@ -19,6 +19,12 @@ if($_SESSION['tipo'] == "admin"){
 
 </main>
 
+<!--MODAL CAMBIOS-->
+<?php
+include("modal_cambio.php");
+?>
+<!--FIN-->
+
 <script src="Bootstrap/js/jquery-3.4.1.min.js"></script>
 <script src="Bootstrap/js/popper.min.js"></script>
 <script src="Bootstrap/js/bootstrap.min.js"></script>
@@ -30,6 +36,8 @@ if($_SESSION['tipo'] == "admin"){
 
 <?php      
 } else{
-    header('Location: index.php');        
+    echo '<script>
+    window.location="index.php";
+    </script>';         
 }
 ?>

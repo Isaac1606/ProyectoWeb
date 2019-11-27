@@ -11,9 +11,15 @@
 <!--OPCIONES USUARIO-->
 <?php
 include("barra_principal.php");
+if(isset($_SESSION['usuario'])){
+?>
+<script>
+                window.location="index.php";
+</script>
+<?php
+}
 ?>
 <!--FIN-->
-
 
 <main class="container-fluid h-100 text-dark mt-4">
     <div class="row justify-content-center mb-1 mt-3">
@@ -56,7 +62,7 @@ include("barra_principal.php");
 
                 <div class="form-group row">
                     <div class="col">
-                        <label for="emaul">Email address</label>
+                        <label for="email">Email address</label>
                         <input type="email" class="form-control" id="email" name="email"
                                placeholder="name@example.com" required>
                     </div>
@@ -106,12 +112,12 @@ include("barra_principal.php");
                         <label for="sexo">Sexo</label><!-- -->
                         <div class="form-check" id="sexo" name="sexo">
                             <div class="custom-control custom-radio">
-                                <input type="radio" value="Hombre" name="Hombre" id="radioPersonalizado1" class="custom-control-input">
+                                <input type="radio" value="Hombre" name="sexo" id="radioPersonalizado1" class="custom-control-input" required>
                                 <label for="radioPersonalizado1"class="custom-control-label">Hombre</label>
                             </div>
 
                             <div class="custom-control custom-radio">
-                                <input type="radio" value="Mujer" name="Mujer" id="radioPersonalizado2" class="custom-control-input">
+                                <input type="radio" value="Mujer" name="sexo" id="radioPersonalizado2" class="custom-control-input" required>
                                 <label for="radioPersonalizado2"  class="custom-control-label">Mujer</label>
                             </div>
                         </div>
@@ -123,12 +129,12 @@ include("barra_principal.php");
                 <div class="form-group row ">
                     <div class="col text-center text-md-right">
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="" id="checkboxPersonalizado2" class="custom-control-input">
+                            <input type="checkbox" name="" id="checkboxPersonalizado2" class="custom-control-input" required>
                             <label for="checkboxPersonalizado2" class="custom-control-label mr-2 mt-1">Acepto las
                                 Politicas de Privacidad </label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" name="" id="checkboxPersonalizado1" class="custom-control-input">
+                            <input type="checkbox" name="" id="checkboxPersonalizado1" class="custom-control-input" required>
                             <label for="checkboxPersonalizado1" class="custom-control-label">Acepto los Terminos y
                                 condiciones</label>
                         </div>
@@ -149,61 +155,6 @@ include("barra_principal.php");
 include("modal.php");
 ?>
 <!--FIN DEL MODAL-->
-
-<!--
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <form action="" class="mt-3">
-                <h2>Checkbox Personalizado</h2>
-                <hr>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="" id="checkboxPersonalizado3" class="custom-control-input">
-                    <label for="checkboxPersonalizado3" class="custom-control-label">Acepto los Terminos y
-                        condiciones</label>
-                </div>
-
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" name="" id="checkboxPersonalizado4" class="custom-control-input">
-                    <label for="checkboxPersonalizado4" class="custom-control-label">Acepto las Politicas de
-                        Privacidad</label>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <form action="" class="mt-3">
-                <h2>Radio Button Personalizado</h2>
-                <hr>
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="sexo" id="radioPersonalizado0" class="custom-control-input">
-                    <label for="radioPersonalizado0" class="custom-control-label">Hombre</label>
-                </div>
-
-                <div class="custom-control custom-radio">
-                    <input type="radio" name="sexo" id="radioPersonalizado01" class="custom-control-input">
-                    <label for="radioPersonalizado01" class="custom-control-label">Mujer</label>
-                </div>
-
-                <br>
-
-
-                <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" name="edad" id="radioPersonalizado3" class="custom-control-input">
-                    <label for="radioPersonalizado3" class="custom-control-label">Menor de Edad</label>
-                </div>
-
-                <div class="custom-control custom-control-inline custom-radio">
-                    <input type="radio" name="edad" id="radioPersonalizado4" class="custom-control-input">
-                    <label for="radioPersonalizado4" class="custom-control-label">Mayor de Edad</label>
-                </div>
-
-            </form>
-        </div>
-    </div>
-</div>
--->
 
 <script src="Bootstrap/js/jquery-3.4.1.min.js"></script>
 <script src="Bootstrap/js/popper.min.js"></script>

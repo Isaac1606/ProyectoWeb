@@ -26,18 +26,7 @@ echo '<header>
                 </ul>';
 
 if(isset($_SESSION['usuario'])){
-        echo '
-        <ul class="navbar-nav mr-left">
-        <li class="nav-item dropdown">
-            <a href="" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mi perfil</a>
-                <div class="dropdown-menu bg-dark" aria-labelledby="menu-categorias">
-                    <a href="postales_enviadas.php" class="dropdown-item text-secondary">Postales Enviadas</a>
-                    <a href="postales_recibidas.php" class="dropdown-item text-secondary">Postales Recibidas</a>
-                    <a href="cerrar_sesion.php" class="dropdown-item text-secondary">Cerrar Sesion</a>
-                </div>
-            </li>
-        </ul>';
-        if($_SESSION['tipo']=='admin'){
+    if($_SESSION['tipo']=='admin'){
         echo'
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
@@ -50,9 +39,23 @@ if(isset($_SESSION['usuario'])){
             </li>
         </ul>';
     }
+        echo '
+        <ul class="navbar-nav mr-left">
+        <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" id="menu-categorias" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mi perfil</a>
+                <div class="dropdown-menu bg-dark" aria-labelledby="menu-categorias">
+                    <a href="postales_enviadas.php" class="dropdown-item text-secondary">Postales Enviadas</a>
+                    <a href="postales_recibidas.php" class="dropdown-item text-secondary">Postales Recibidas</a>
+                    <a href="#modalClave" data-toggle="modal" class="dropdown-item text-secondary">Editar Contraseña</a>
+                    <a href="cerrar_sesion.php" class="dropdown-item text-secondary">Cerrar Sesion</a>
+                </div>
+            </li>
+        </ul>';
+        
     echo '
-        <a>
-            <img src="data:image/jpeg;base64,'.base64_encode($_SESSION['imagen']).'" width="40"/>
+        <a href="#modalImagen" data-toggle="modal">
+            <img src="data:image/jpeg;base64,'.base64_encode($_SESSION['imagen']).'" width="40"/ class="d-none d-sm-none d-md-block">
+            <img src="data:image/jpeg;base64,'.base64_encode($_SESSION['imagen']).'" width="100"/ class="d-block d-sm-block d-md-none">
         </a>
     ';
 } else{

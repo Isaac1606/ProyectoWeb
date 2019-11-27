@@ -44,3 +44,5 @@ create table envio_imagen(
     foreign key (id_imagen) references imagen(id_imagen),
     foreign key (id_usuario) references imagen(id_usuario)
 );
+
+CREATE VIEW enviosxcat AS SELECT nombre_categoria, COUNT(*) as envios FROM categoria GROUP BY nombre_categoria;
